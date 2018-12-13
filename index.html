@@ -85,28 +85,30 @@ Of course, everyone knows that a burger is not healthy. But let's be honest: suc
 
 <form>
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Example select</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <div class="form-group">
         <label for="exampleFormControlSelect2">Select ingredients</label>
+
         <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>carrot</option>
-            <option>milk</option>
-            <option>yogurt</option>
-            <option>4</option>
-            <option>5</option>
+            <div id = "demo"></div>
+          <script>
+            var text = "";
+            var ingredients = [
+                "carrots",
+                "milk",
+                "yogurt",
+                "butter",
+                "flour",
+                "apple",
+                "zucchini",
+                "onion",
+                "rucula"
+            ];
+            for (var i = 0; i < ingredients.length; i++) {
+              text += "<option>" + ingredients[i] + "</option>";
+            }
+            document.getElementById("demo").innerHTML = text;
+          </script>
+
         </select>
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
 </form>
 
@@ -115,16 +117,3 @@ Of course, everyone knows that a burger is not healthy. But let's be honest: suc
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-    var ingredients = [
-        "carrots",
-        "milk",
-        "yogurt",
-        "butter",
-        "flour",
-        "apple",
-        "zucchini",
-        "onion",
-        "rucula"
-    ]
-</script>
