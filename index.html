@@ -26,10 +26,10 @@
         <a class="nav-link" href="webapp.html">Web Application</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <form class="form-inline md-form form-sm active-cyan-2 mt-2">
+  <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+  <i class="fas fa-search" aria-hidden="true"></i>
+</form>
   </div>
 </nav>
 
@@ -152,6 +152,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
+$('#heading').on('slide.bs.carousel', function () {
+  // do something…
+})
 $('.carousel').carousel({
 interval: false
 })
