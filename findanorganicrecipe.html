@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
+<html>
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <body class="p-3 mb-2 bg-dark text-white">
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 
+#myUL {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body class="p-3 mb-2 bg-dark text-white">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,6 +68,64 @@
       </form>
     </div>
   </nav>
+  <br>
+<h1>Select Recipes</h1>
+<br>
+<h2>Breakfast</h2>
 
-  </body>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipes.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Apple</a></li>
+  <li><a href="#">Banana</a></li>
+  <li><a href="#">Beetroot</a></li>
+  <li><a href="#">Cinnamon</a></li>
+  <li><a href="#">Cucumber</a></li>
+  <li><a href="#">Egg</a></li>
+  <li><a href="#">Honey</a></li>
+  <li><a href="#">Strawberry</a></li>
+  <li><a href="#">Toast</a></li>
+
+
+</ul>
+<h2>Dinner</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipes.." title="Type in a name">
+
+<ul id="myUL">
+  <li class = "hide"><a href="#">Apple</a></li>
+  <li><a href="#">Banana</a></li>
+  <li><a href="#">Beetroot</a></li>
+  <li><a href="#">Cinnamon</a></li>
+  <li><a href="#">Cucumber</a></li>
+  <li><a href="#">Egg</a></li>
+  <li><a href="#">Honey</a></li>
+  <li><a href="#">Strawberry</a></li>
+  <li><a href="#">Toast</a></li>
+  <li><a href="#">Strawberry</a></li>
+
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    ul.style.display='block';
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
 </html>
