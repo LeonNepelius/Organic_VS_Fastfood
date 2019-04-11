@@ -1,131 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="stylesheet.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myUL {
-  display: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-</style>
-</head>
-<body class="p-3 mb-2 bg-dark text-white">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="home.html">Home</a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="topic.html">Topic<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="webapp.html">Web Application</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="findanorganicrecipe.html">Find an Organic Recipe</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <br>
-<h1>Select Recipes</h1>
-<br>
-<h2>Breakfast</h2>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipes.." title="Type in a name">
-
-<ul id="myUL">
-  <li><a href="#">Apple</a></li>
-  <li><a href="#">Banana</a></li>
-  <li><a href="#">Beetroot</a></li>
-  <li><a href="#">Cinnamon</a></li>
-  <li><a href="#">Cucumber</a></li>
-  <li><a href="#">Egg</a></li>
-  <li><a href="#">Honey</a></li>
-  <li><a href="#">Strawberry</a></li>
-  <li><a href="#">Toast</a></li>
+ <head>
+  <title>Webslesson Tutorial | Search HTML Table Data by using JQuery</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #result {
+   position: absolute;
+   width: 100%;
+   max-width:870px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+   color: black;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+  }
+  </style>
+ </head>
+   <body class="p-3 mb-2 bg-dark text-white">
 
 
-</ul>
-<h2>Dinner</h2>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <a class="navbar-brand" href="home.html">Home</a>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipes.." title="Type in a name">
-
-<ul id="myUL">
-  <li class = "hide"><a href="#">Apple</a></li>
-  <li><a href="#">Banana</a></li>
-  <li><a href="#">Beetroot</a></li>
-  <li><a href="#">Cinnamon</a></li>
-  <li><a href="#">Cucumber</a></li>
-  <li><a href="#">Egg</a></li>
-  <li><a href="#">Honey</a></li>
-  <li><a href="#">Strawberry</a></li>
-  <li><a href="#">Toast</a></li>
-  <li><a href="#">Strawberry</a></li>
-
-
-</ul>
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+           <li class="nav-item active">
+             <a class="nav-link" href="topic.html">Topic<span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item active">
+             <a class="nav-link" href="webapp.html">Web Application</a>
+           </li>
+           <li class="nav-item active">
+             <a class="nav-link" href="findanorganicrecipe.html">Find an Organic Recipe</a>
+           </li>
+         </ul>
+         <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         </form>
+       </div>
+     </nav>
+     <div class="jumbotron text-center bg-dark">
+       <h1 class="display-4">Add Recipes</h1>
+     </div>
+   <div align="center">
+    <input type="text" name="search" id="search" placeholder="Search for recipes" class="form-control" />
+   </div>
+   <ul class="list-group" id="result"></ul>
+   <br />
+  </div>
+ </body>
+</html>
 
 <script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    ul.style.display='block';
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
+$(document).ready(function(){
+ $.ajaxSetup({ cache: false });
+ $('#search').keyup(function(){
+  $('#result').html('');
+  $('#state').val('');
+  var searchField = $('#search').val();
+  var expression = new RegExp(searchField, "i");
+  $.getJSON('recipes.json', function(data) {
+   $.each(data, function(key, value){
+    if (value.recipe.search(expression) != -1)
+    {
+     $('#result').append('<li class="list-group-item link-class"><img src="'+value.image+'" height="40" width="40" class="img-thumbnail" /> '+value.recipe+'</li>');
     }
-}
-</script>
+   });
+  });
+ });
 
-</body>
-</html>
+ $('#result').on('click', 'li', function() {
+  var click_text = $(this).text().split('|');
+  $('#search').val($.trim(click_text[0]));
+  $("#result").html('');
+ });
+});
+</script>

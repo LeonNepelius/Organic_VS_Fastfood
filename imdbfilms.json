@@ -96,8 +96,8 @@
         "title": "The Lord of the Programing",
   	  "rating": "10",
         "description": "A meek Programer from the Shire and eight companions set out on a journey to destroy the powerful programing language c and save Middle-earth from the complete Destruction.",
-        "director": "Leon Nepelius",
-        "stars": ["David Kraus", "Kocis Patrick", "Alexander Handstangi"]
+        "director": "Leon Nepelius",#
+        "stars": ["David Kraus", "Kocis Patrick", "Alexander Handstangirfevefveqveeqqevqev"]
       }
   ]
 }
