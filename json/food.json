@@ -1,40 +1,37 @@
-{
-  "food": [
+[
     {
       "id": "1",
       "food": "Springroll",
-      "description": "Vegetables covered in dough",
-      "needed" : "bean sprouts, 1 head of white cabbage (small), 60 ml soy sauce, 2 carrots, 4 onion, 1 chili, 16 leaves spring roll dough (about 220 g), salt, pepper, oil",
-      "preperation": "Blanch the bean sprouts briefly in salted water, fry cold. Halve white cabbage, cut out stalk. Peel off leaves, cut in half, remove thick leaf ribs, cook leaves in boiling salted water until firm, fry cold, squeeze and marinate with the bean sprouts in the soy sauce. Peel the carrots and slice thinly with the peeler. Clean the young onions and halve lengthwise. Chop chili finely. Cover 2 pastry sheets with one corner down, with cabbage leaves, carrots, sprouts and green onions. Season with salt, pepper and chili. Roll in part of the corner towards the center, moisten the edges, hammer in the corners, roll up the dough. Heat oil in a pot 2 fingers high, bake spring rolls in golden yellow. Remove, drain and possibly serve garnished with cress.",
+      "ingredients" : "bean sprouts, 1 head of white cabbage (small), 60 ml soy sauce, 2 carrots, 4 onion, 1 chili, 16 leaves spring roll dough (about 220 g), salt, pepper, oil",
+      "preparation": "Blanch the bean sprouts briefly in salted water, fry cold. Halve white cabbage, cut out stalk. Peel off leaves, cut in half, remove thick leaf ribs, cook leaves in boiling salted water until firm, fry cold, squeeze and marinate with the bean sprouts in the soy sauce. Peel the carrots and slice thinly with the peeler. Clean the young onions and halve lengthwise. Chop chili finely. Cover 2 pastry sheets with one corner down, with cabbage leaves, carrots, sprouts and green onions. Season with salt, pepper and chili. Roll in part of the corner towards the center, moisten the edges, hammer in the corners, roll up the dough. Heat oil in a pot 2 fingers high, bake spring rolls in golden yellow. Remove, drain and possibly serve garnished with cress.",
       "recipes": "white cabbage, soy sauce, carrot, chili, spring roll dough"
     },
     {
-      "id": "1",
-      "food": "Springroll",
-      "description": "Vegetables covered in dough",
-      "needed" : "bean sprouts, 1 head of white cabbage (small), 60 ml soy sauce, 2 carrots, 4 onion, 1 chili, 16 leaves spring roll dough (about 220 g), salt, pepper, oil",
-      "preperation": "Blanch the bean sprouts briefly in salted water, fry cold. Halve white cabbage, cut out stalk. Peel off leaves, cut in half, remove thick leaf ribs, cook leaves in boiling salted water until firm, fry cold, squeeze and marinate with the bean sprouts in the soy sauce. Peel the carrots and slice thinly with the peeler. Clean the young onions and halve lengthwise. Chop chili finely. Cover 2 pastry sheets with one corner down, with cabbage leaves, carrots, sprouts and green onions. Season with salt, pepper and chili. Roll in part of the corner towards the center, moisten the edges, hammer in the corners, roll up the dough. Heat oil in a pot 2 fingers high, bake spring rolls in golden yellow. Remove, drain and possibly serve garnished with cress.",
-      "recipes": "white cabbage, soy sauce, carrot, chili, spring roll dough"    },
+      "id": "2",
+      "food": "Apple Pie",
+      "ingredients" : "placeholder",
+      "preparation": "placeholder",
+      "recipes": "placeholder"
+    },
     {
-      "id": "1",
-      "food": "Springroll",
-      "description": "Vegetables covered in dough",
-      "needed" : "bean sprouts, 1 head of white cabbage (small), 60 ml soy sauce, 2 carrots, 4 onion, 1 chili, 16 leaves spring roll dough (about 220 g), salt, pepper, oil",
-      "preperation": "Blanch the bean sprouts briefly in salted water, fry cold. Halve white cabbage, cut out stalk. Peel off leaves, cut in half, remove thick leaf ribs, cook leaves in boiling salted water until firm, fry cold, squeeze and marinate with the bean sprouts in the soy sauce. Peel the carrots and slice thinly with the peeler. Clean the young onions and halve lengthwise. Chop chili finely. Cover 2 pastry sheets with one corner down, with cabbage leaves, carrots, sprouts and green onions. Season with salt, pepper and chili. Roll in part of the corner towards the center, moisten the edges, hammer in the corners, roll up the dough. Heat oil in a pot 2 fingers high, bake spring rolls in golden yellow. Remove, drain and possibly serve garnished with cress.",
-      "recipes": "white cabbage, soy sauce, carrot, chili, spring roll dough"    },
+      "id": "3",
+      "food": "Banana Split",
+      "ingredients" : "placeholder",
+      "preparation": "placeholder",
+      "recipes": "placeholder"
+    },
     {
-      "id": "1",
-      "food": "Springroll",
-      "description": "Vegetables covered in dough",
-      "needed" : "bean sprouts, 1 head of white cabbage (small), 60 ml soy sauce, 2 carrots, 4 onion, 1 chili, 16 leaves spring roll dough (about 220 g), salt, pepper, oil",
-      "preperation": "Blanch the bean sprouts briefly in salted water, fry cold. Halve white cabbage, cut out stalk. Peel off leaves, cut in half, remove thick leaf ribs, cook leaves in boiling salted water until firm, fry cold, squeeze and marinate with the bean sprouts in the soy sauce. Peel the carrots and slice thinly with the peeler. Clean the young onions and halve lengthwise. Chop chili finely. Cover 2 pastry sheets with one corner down, with cabbage leaves, carrots, sprouts and green onions. Season with salt, pepper and chili. Roll in part of the corner towards the center, moisten the edges, hammer in the corners, roll up the dough. Heat oil in a pot 2 fingers high, bake spring rolls in golden yellow. Remove, drain and possibly serve garnished with cress.",
-      "recipes": "white cabbage, soy sauce, carrot, chili, spring roll dough"    },
+      "id": "4",
+      "food": "Apple sauce",
+      "ingredients" : "placeholder",
+      "preparation": "placeholder",
+      "recipes": "placeholder"
+    },
     {
-      "id": "1",
-      "food": "Springroll",
-      "description": "Vegetables covered in dough",
-      "needed" : "bean sprouts, 1 head of white cabbage (small), 60 ml soy sauce, 2 carrots, 4 onion, 1 chili, 16 leaves spring roll dough (about 220 g), salt, pepper, oil",
-      "preperation": "Blanch the bean sprouts briefly in salted water, fry cold. Halve white cabbage, cut out stalk. Peel off leaves, cut in half, remove thick leaf ribs, cook leaves in boiling salted water until firm, fry cold, squeeze and marinate with the bean sprouts in the soy sauce. Peel the carrots and slice thinly with the peeler. Clean the young onions and halve lengthwise. Chop chili finely. Cover 2 pastry sheets with one corner down, with cabbage leaves, carrots, sprouts and green onions. Season with salt, pepper and chili. Roll in part of the corner towards the center, moisten the edges, hammer in the corners, roll up the dough. Heat oil in a pot 2 fingers high, bake spring rolls in golden yellow. Remove, drain and possibly serve garnished with cress.",
-      "recipes": "white cabbage, soy sauce, carrot, chili, spring roll dough"}
-  ]
-}
+      "id": "5",
+      "food": "Carrot Pie",
+      "ingredients" : "placeholder",
+      "preparation": "placeholder",
+      "recipes": "placeholder"
+    }
+]
