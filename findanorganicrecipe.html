@@ -76,7 +76,12 @@
   </div>
 
 
-
+  <div>
+    <h1 class="display-4 text-dark">Organic Vs Fastfood</h1>
+  <p class="lead text-center">
+    <a class="btn btn-secondary btn-lg" href="findanorganicrecipe.html" role="button">Search for another recipe</a>
+  </p>
+</div>
 
  </body>
 </html>
@@ -117,14 +122,8 @@ $(document).ready(function(){
          $.each(data, function(key, value){
              if (value.recipes.includes(selected[i].toLowerCase()))
              {
-                 $('#result3').append('<li class="list-group-item">'+value.food+'<br>'+value.preparation+'</li>');
-
-
-
-                 i++;
-
-
-
+                 $('#result3').append('<li class="list-group-item"> Recipe: ' +value.food+ '<br>All Ingredients needed: ' +value.recipes+ '<br>Preperation:<br> '+value.preparation+'</li>');
+                 i++
              }
          });
      });

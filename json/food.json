@@ -25,7 +25,7 @@
       "food": "Apple sauce",
       "ingredients" : "placeholder",
       "preparation": "Place the peeled, cored, quartered and chopped apples in a large pot.  Add the water, lemon juice, sugar, ground cinnamon, and salt. Stir well.  Bring to a boil on high heat, then turn to low and cover.  Maintain a low simmer for 30 minutes or until the apples are completely soft and cooked through. Once fully cooked, remove from heat.  For a chunky applesauce, mash the apples in the pot with a potato masher. For a smooth applesauce, add to a food processor or blender and blend until smooth (if using a blender, work in batches and allow time to cool). Delicious served warm or cold.",
-      "recipes": "apple"
+      "recipes": "apple, water, lemon juice, sugar, ground cinnamon, salt"
     },
     {
       "id": "5",
