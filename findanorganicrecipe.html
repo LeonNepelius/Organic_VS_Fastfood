@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
  <head>
@@ -19,6 +20,9 @@
    }
 
   #result2 {
+      color: black;
+  }
+  #result3 {
       color: black;
   }
   .link-class:hover{
@@ -50,7 +54,7 @@
        </div>
      </nav>
      <div class="jumbotron text-center bg-dark">
-       <h1 class="display-4">Add Recipes</h1>
+       <h1 class="display-4">Add Ingredients</h1>
      </div>
    <div align="center">
     <input type="text" name="search" id="search" placeholder="Search for recipes" class="form-control" />
@@ -58,17 +62,28 @@
    <ul class="list-group" id="result"></ul>
    <br />
      <div class="jumbotron text-center bg-dark">
-         <h1 class="display-4">Selected Recipes</h1>
+         <h1 class="display-4">Selected Ingredients</h1>
          <ul class="list-group" id="result2"></ul>
      </div>
      <div class="text-center bg-dark">
-         <button class="btn btn-success my-2 my-sm-0" type="submit">Search for food</button>
+         <button class="btn btn-success my-2 my-sm-0" id="find" type="submit">Search for Ingredients</button>
+
+     </div>
+     <div class="jumbotron text-center bg-dark">
+         <h1 class="display-4">Found Recipes</h1>
+         <ul class="list-group" id="result3"></ul>
      </div>
   </div>
+
+
+
+
  </body>
 </html>
 
 <script>
+    var selected = new Array(100);
+    var i = 0;
 $(document).ready(function(){
  $.ajaxSetup({ cache: false });
  $('#search').keyup(function(){
@@ -76,11 +91,11 @@ $(document).ready(function(){
   $('#state').val('');
   var searchField = $('#search').val();
   var expression = new RegExp(searchField, "i");
-  $.getJSON('json/recipes.json', function(data) {
+  $.getJSON('json/Ingredients.json', function(data) {
    $.each(data, function(key, value){
-    if (value.recipe.search(expression) != -1)
+    if (value.ingredients.search(expression) != -1)
     {
-     $('#result').append('<li class="list-group-item link-class"><img src="'+value.image+'" height="40" width="40" class="img-thumbnail" /> '+value.recipe+'</li>');
+     $('#result').append('<li class="list-group-item link-class"><img src="'+value.image+'" height="40" width="40" class="img-thumbnail" /> '+value.ingredients+'</li>');
     }
    });
   });
@@ -88,9 +103,31 @@ $(document).ready(function(){
 
  $('#result').on('click', 'li', function() {
   var click_text = $(this).text().split('|');
+  selected[i] = String($.trim(click_text[0]));
+  i++;
   $('#result2').append('<li class="list-group-item">'+click_text+'</li>');
   $('#search').val($.trim(click_text[0]));
   $("#result").html('');
+ });
+
+ $('#find').on('click',function () {
+     console.log(selected[0]);
+     i =0;
+     $.getJSON('json/food.json', function(data) {
+         $.each(data, function(key, value){
+             if (value.recipes.includes(selected[i].toLowerCase()))
+             {
+                 $('#result3').append('<li class="list-group-item">'+value.food+'<br>'+value.preparation+'</li>');
+
+
+
+                 i++;
+
+
+
+             }
+         });
+     });
  });
 });
 </script>
