@@ -73,8 +73,6 @@
          <h1 class="display-4">Found Recipes</h1>
          <ul class="list-group" id="result3"></ul>
      </div>
-  </div>
-
 
   <div>
   <p class="lead text-center">
@@ -87,7 +85,7 @@
 
 <script>
     var selected = new Array(100);
-    var i = 0;
+    var count = 0;
 $(document).ready(function(){
  $.ajaxSetup({ cache: false });
  $('#search').keyup(function(){
@@ -107,23 +105,32 @@ $(document).ready(function(){
 
  $('#result').on('click', 'li', function() {
   var click_text = $(this).text().split('|');
-  selected[i] = String($.trim(click_text[0]));
-  i++;
+  selected[count] = String($.trim(click_text[0]));
+  count++;
   $('#result2').append('<li class="list-group-item">'+click_text+'</li>');
   $('#search').val($.trim(click_text[0]));
   $("#result").html('');
  });
 
  $('#find').on('click',function () {
-     console.log(selected[0]);
-     i =0;
+     var i = 0;
+     var contained = false;
      $.getJSON('json/food.json', function(data) {
          $.each(data, function(key, value){
-             if (value.recipes.includes(selected[i].toLowerCase()))
+             for (var x = 0;x < count;x++)
              {
-                 $('#result3').append('<li class="list-group-item"> Recipe: ' +value.food+ '<br>All Ingredients needed: ' +value.recipes+ '<br>Preperation:<br> '+value.preparation+'</li>');
-                 i++
+                 if (value.recipes.includes(selected[i].toLowerCase()))
+                 {
+                     if (!contained)
+                     {
+                         $('#result3').append('<li class="list-group-item"> Recipe: ' +value.food+ '<br>All Ingredients needed: ' +value.recipes+ '<br>Preperation:<br> '+value.preparation+'</li>');
+                         contained = true;
+                     }
+                 }
+                 i++;
              }
+             contained =false;
+             i = 0;
          });
      });
  });
