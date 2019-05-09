@@ -9,16 +9,16 @@
     {
       "id": "2",
       "food": "Apple Pie",
-      "ingredients" : "placeholder",
-      "preparation": "placeholder",
-      "recipes": "placeholder"
+      "ingredients" : "apple, sugar",
+      "preparation": "For the dough, sift flour into a bowl and mix with sugar and salt. Add the butter in little flakes and process everything with your fingers to a crumbly mass. Then knead with so much ice-cold water until a smooth, well-shaped shortcrust pastry has been made. Wrap the dough in foil and refrigerate. Then peel the apples, core them and cut into slices. Sprinkle with the lemon juice.Take sugar, cane sugar, flour, lemon zest, nutmeg and a little cinnamon in a bowl as you like and fold in the apple slices. Take the dough out of the fridge and divide in half. Roll out one of them and add a sprinkler Interpret Pieform with it. Distribute the apples on top, pile a little in the middle. Then roll out the remaining dough and spread out 1.5 cm wide strips. Lay as a grid over the apples and press well on the edges. Brush the dough with the milk. At 200 ° C, bake the top / bottom heat on the bottom rack for about 10 minutes, then reduce to 180 ° C and bake for about 60-75 minutes until the lattice strips have a light crust Connects to the apple juice that comes out when baking - gives a particularly tasty filling.",
+      "recipes": "Flour 1 tsp sugar, 1 tsp salt, 175 g butter, soft, 6 tbsp water (ice water), For the filling: 1 1/2 kg of apples, 125 g of sugar, 50 g cane sugar, brown, 2 tablespoons flour, 1 lemon (s), of which juice and peel, 1 pinch (s) of nutmeg, For painting:, 1 tbsp milk"
     },
     {
       "id": "3",
       "food": "Banana Split",
       "ingredients" : "placeholder",
-      "preparation": "placeholder",
-      "recipes": "banana"
+      "preparation": "Place banana in a dessert dish; place scoops of ice cream between banana. Top with remaining ingredients. Serve immediately.",
+      "recipes": "banana, vanilla ice cream, chocolate ice cream, strawberry ice cream"
     },
     {
       "id": "4",
@@ -31,7 +31,7 @@
       "id": "5",
       "food": "Carrot Pie",
       "ingredients" : "placeholder",
-      "preparation": "placeholder",
-      "recipes": ""
+      "preparation": "Preheat the oven to 400 degrees F (200 degrees C). Press the pie crust into the bottom and up the sides of a 9-inch pie plate. Bake the pie shell for 3 to 5 minutes, just to firm it up, then remove from the oven, and set aside. Place carrots in a saucepan with enough water to cover. Bring to a boil, and cook until tender, about 10 minutes. Drain water, and mash carrots until smooth using a food processor, or potato ricer. In a medium bowl, mix together the carrot puree, sugar and eggs. Mix in the cinnamon and vanilla. Gradually stir in the milk. Pour the mixture into the partially baked pie shell. Bake for 10 minutes in the preheated oven, then reduce heat to 350 degrees F (175 degrees C). Bake for an additional 40 to 45 minutes at the lower temperature, or until firm. Cool completely before serving.",
+      "recipes": "sugar, carrots, eggs, milk, ground cinnamon,"
     }
 ]
