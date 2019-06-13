@@ -127,7 +127,7 @@ $(document).ready(function(){
                      {
                          if (!contained)
                          {
-                             $('#result3').append('<center><li class="list-group-item" style=" background: url('+value.image+'" height="647" width="742") no-repeat; background-position: center;"> Recipe: '+value.food+ '<br>All Ingredients needed: ' +value.recipes+ '<br>Preperation:<br> '+value.preparation+'<br></li></center>');
+                             $('#result3').append('<center><li class="list-group-item" style="background: url('+value.image+') no-repeat; background-size: 100% auto; background-position: center; background-color: white"><span style="background-color: white"><font style="background-color: white" size="7">'+value.food+'</font><br>All Ingredients needed: ' +value.recipes+ '<br><font style="background-color: white" size="5">Preperation:</font><br> '+value.preparation+'<br></li></span></center>');
                              contained = true;
                          }
                      }
