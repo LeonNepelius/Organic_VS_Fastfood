@@ -55,31 +55,25 @@
      </nav>
      <div class="jumbotron text-center bg-dark">
        <h1 class="display-4">Add Ingredients</h1>
-     </div>
+         <br>
    <div align="center">
     <input type="text" name="search" id="search" placeholder="Search for ingredients" class="form-control" />
    </div>
-   <ul class="list-group" id="result"></ul>
-   <br />
+     <ul class="list-group text-left" id="result"></ul>
+     </div>
      <div class="jumbotron text-center bg-dark">
          <h1 class="display-4">Selected Ingredients</h1>
+         <br>
          <ul class="list-group" id="result2"></ul>
-     </div>
-     <div class="text-center bg-dark">
+         <br>
          <button class="btn btn-success my-2 my-sm-0" id="find" type="submit">Search for Recipes</button>
-
      </div>
      <div class="jumbotron text-center bg-dark">
          <h1 class="display-4">Found Recipes</h1>
          <ul class="list-group" id="result3"></ul>
+         <br>
+         <a class="btn btn-secondary btn-lg" href="findanorganicrecipe.html" role="button">Search for another recipe</a>
      </div>
-
-  <div>
-  <p class="lead text-center">
-    <a class="btn btn-secondary btn-lg" href="findanorganicrecipe.html" role="button">Search for another recipe</a>
-  </p>
-</div>
-
  </body>
 </html>
 
@@ -127,8 +121,7 @@ $(document).ready(function(){
                      {
                          if (!contained)
                          {
-                             $('#result3').append('<center><li class="list-group-item" style="background: url('+value.image+') no-repeat; background-size: 100% auto; background-position: center; background-color: white"><span style="background-color: white"><font style="background-color: white" size="7">'+value.food+'</font><br>All Ingredients needed: ' +value.recipes+ '<br><font style="background-color: white" size="5">Preperation:</font><br> '+value.preparation+'<br></li></span></center>');
-                             contained = true;
+                             $('#result3').append('<center><li class="list-group-item" style="background: url('+value.image+') no-repeat; background-size: 100% auto; background-position: center; background-color: white"><span style="background-color: white"><font style="background-color: white" size="7">'+value.food+'</font><br>All Ingredients needed: ' +value.recipes+ '<br><font style="background-color: white" size="5">Preperation:</font><br> '+value.preparation+'<br></li></span></center>');                             contained = true;
                          }
                      }
                      i++;
